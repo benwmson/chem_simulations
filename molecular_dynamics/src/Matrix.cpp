@@ -29,7 +29,13 @@ Matrix::Matrix(const int& rows, const int& columns) {
 }//Matrix(int&, int&)
 
 Matrix::~Matrix() {
-	// TODO Auto-generated destructor stub
+
+	if (A!=0){
+		delete [] A[0];
+		delete [] A;
+	}
+
+
 }
 
 } /* namespace storage */
