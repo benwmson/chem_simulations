@@ -15,7 +15,7 @@ Matrix::Matrix(const int& rows, const int& columns) {
 	int i,j;
 
 	for(i=1; i<rows; i++){//Pointer math
-		A[i] = A[i-i] + columns;
+		A[i] = A[i-1] + columns;
 	}
 
 	for(i=0; i<rows; i++){
@@ -43,7 +43,7 @@ Matrix::Matrix(const Matrix& rhs){
 	int i,j;
 
 	for(i=1; i<rows; i++){//Pointer math
-			A[i] = A[i-i] + columns;
+			A[i] = A[i-1] + columns;
 		}
 
 		for(i=0; i<rows; i++){
