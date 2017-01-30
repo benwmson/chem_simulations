@@ -4,7 +4,7 @@
 
 namespace std {
 
-
+Matrix::Matrix():A(0){}//default contructor
 
 Matrix::Matrix(const int& rows, const int& columns) {
 	this->rows = rows;
