@@ -97,7 +97,9 @@ Matrix::~Matrix() {//destructor
 		delete [] A;
 	}
 
-
+void Matrix::Set(int row, int column, double value){
+	this->A[row][column] = value;
+}
 
 
 }
