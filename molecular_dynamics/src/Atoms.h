@@ -14,6 +14,11 @@ class Atoms {
 public:
 	Atoms();
 	Atoms(const int& n, const int& d);
+	int getN(){return n;}
+	int getD(){return d;}
+	Matrix getPositions(){return R;}
+	Matrix getInitialVelocities(){return V0;}
+	Matrix getForces(){return F;};
 
 	virtual ~Atoms();
 
