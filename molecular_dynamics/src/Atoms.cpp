@@ -1,16 +1,12 @@
-/*
- * Atoms.cpp
- *
- *  Created on: Feb 1, 2017
- *      Author: tom
- */
+
 
 #include "Atoms.h"
 
 namespace std {
 
-Atoms::Atoms() {
-	// TODO Auto-generated constructor stub
+Atoms::Atoms(){
+	n = 0, d = 0;
+	R = Matrix(), V = Matrix(), F = Matrix(), V0 = Matrix();
 
 }
 
